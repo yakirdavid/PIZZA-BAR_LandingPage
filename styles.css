@@ -217,7 +217,7 @@ p { margin: 0 0 1em; }
 .review { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 2rem; position: relative; }
 .review::before { content: "״"; position: absolute; top: -10px; left: 20px; font-family: var(--font-display); font-size: 6rem; color: var(--dough); line-height: 1; z-index: 0; }
 .review > * { position: relative; }
-.stars { color: #f5a623; letter-spacing: 3px; font-size: 1.1rem; margin-bottom: .6rem; }
+.review p { margin: 0; font-size: 1.05rem; }
 .review cite { font-style: normal; font-weight: 700; color: var(--muted); }
 
 /* ===== Order strip ===== */
