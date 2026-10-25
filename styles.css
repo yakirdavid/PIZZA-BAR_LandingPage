@@ -151,6 +151,7 @@ p { margin: 0 0 1em; }
 /* ===== Highlights ===== */
 .highlights { background: var(--coal-2); color: #fff; padding: 3rem 0; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem; max-width: 960px; margin-inline: auto; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; }
 .highlight p { opacity: .75; font-size: .95rem; margin: 0; }
 .h-icon { font-size: 2.2rem; display: block; margin-bottom: .5rem; }
@@ -314,7 +315,7 @@ details p { padding: 0 1.4rem 1.2rem; margin: 0; color: var(--muted); }
   .hero { min-height: auto; text-align: center; }
   .hero-ctas, .hero-badges { justify-content: center; }
   .lead { margin-inline: auto; }
-  .grid-3, .menu-grid, .packages { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .menu-grid, .packages { grid-template-columns: 1fr; }
   .order-inner { flex-direction: column; text-align: center; }
   .order-btns { justify-content: center; }
 
