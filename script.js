@@ -1,6 +1,6 @@
 // ===== הגדרות העסק – עדכנו כאן =====
 const CONFIG = {
-  whatsapp: "972500000000", // מספר בפורמט בינלאומי, בלי + ובלי 0 בהתחלה
+  whatsapp: "972526177698", // מספר בפורמט בינלאומי, בלי + ובלי 0 בהתחלה
 };
 
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -100,7 +100,7 @@ form.addEventListener("submit", (e) => {
 });
 
 // ===== Reveal on scroll =====
-const revealEls = $$(".section-head, .highlight, .step, .package, .dish, .card, .review, .split > *, details, .g-item");
+const revealEls = $$(".section-head, .highlight, .step, .package, .dish, .card, .review, .split > *, details");
 revealEls.forEach((el) => el.classList.add("reveal"));
 const io = new IntersectionObserver(
   (entries) =>
