@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>פיצה בר טאבון | פיצה אפויה באש עצים</title>
+  <meta name="description" content="פיצה בר טאבון – פיצות בצק מחמצת אפויות בטאבון אבן על אש עצים, בר קוקטיילים, בירות מהחבית ואווירה חמה. הזמנת מקום, משלוחים ואירועים.">
+  <meta name="theme-color" content="#1a0f0a">
+
+  <!-- Open Graph (שיתוף בוואטסאפ / פייסבוק) -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="פיצה בר טאבון | פיצה אפויה באש עצים">
+  <meta property="og:description" content="בצק מחמצת, טאבון אבן, אש עצים ובר שלא נגמר. בואו לטעום.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:locale" content="he_IL">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Suez+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- נתונים מובנים לגוגל (Google Business / חיפוש מקומי) – עדכנו לפרטים האמיתיים -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "פיצה בר טאבון",
+    "servesCuisine": ["Pizza", "Italian", "Bar"],
+    "priceRange": "₪₪",
+    "telephone": "+972-50-000-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "רחוב הדוגמה 12",
+      "addressLocality": "תל אביב",
+      "addressCountry": "IL"
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"], "opens": "12:00", "closes": "00:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "12:00", "closes": "16:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "19:00", "closes": "01:00"}
+    ],
+    "acceptsReservations": "True"
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">דלגו לתוכן</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="פיצה בר טאבון – לראש הדף">
+        <span class="logo-mark">🔥</span>
+        <span class="logo-text">טאבון<small>פיצה בר</small></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="ניווט ראשי">
+        <a href="#about">הסיפור</a>
+        <a href="#menu">תפריט</a>
+        <a href="#bar">הבר</a>
+        <a href="#events">אירועים</a>
+        <a href="#reviews">ביקורות</a>
+        <a href="#contact">שעות ומיקום</a>
+        <a href="#reserve" class="btn btn-primary btn-sm">הזמנת מקום</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="embers" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">אש עצים · בצק מחמצת · 90 שניות בטאבון</p>
+          <h1>פיצה שנולדת<br><span class="fire-text">בתוך האש</span></h1>
+          <p class="lead">
+            טאבון אבן שבוער כל היום על עצי פרי, בצק שתופח 48 שעות וחומרי גלם טריים מהשוק.
+            ולצד זה – בר עם בירות מהחבית, קוקטיילים ומוזיקה טובה.
+          </p>
+          <div class="hero-ctas">
+            <a href="#reserve" class="btn btn-primary">שמרו לי שולחן</a>
+            <a href="#menu" class="btn btn-ghost">לתפריט המלא</a>
+          </div>
+          <ul class="hero-badges">
+            <li><strong>4.9★</strong> בגוגל</li>
+            <li><strong>450°</strong> חום בטאבון</li>
+            <li><strong>48</strong> שעות התפחה</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <!-- איור טאבון + פיצה -->
+          <svg viewBox="0 0 400 400" class="oven-svg">
+            <defs>
+              <radialGradient id="fireGlow" cx="50%" cy="70%" r="60%">
+                <stop offset="0%" stop-color="#ffd27a"/>
+                <stop offset="40%" stop-color="#ff7a1a"/>
+                <stop offset="100%" stop-color="#7a1d05" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#b5653a"/>
+                <stop offset="100%" stop-color="#6b321a"/>
+              </linearGradient>
+            </defs>
+            <circle cx="200" cy="230" r="190" fill="url(#fireGlow)" opacity=".35" class="glow-pulse"/>
+            <!-- כיפת הטאבון -->
+            <path d="M40 300 Q40 90 200 90 Q360 90 360 300 Z" fill="url(#dome)"/>
+            <g fill="#8a4424" opacity=".55">
+              <rect x="80" y="160" width="40" height="18" rx="4"/><rect x="128" y="130" width="40" height="18" rx="4"/>
+              <rect x="232" y="130" width="40" height="18" rx="4"/><rect x="280" y="160" width="40" height="18" rx="4"/>
+              <rect x="70" y="210" width="40" height="18" rx="4"/><rect x="290" y="210" width="40" height="18" rx="4"/>
+            </g>
+            <!-- פתח -->
+            <path d="M120 300 Q120 190 200 190 Q280 190 280 300 Z" fill="#1a0a04"/>
+            <!-- להבות -->
+            <g class="flames">
+              <path d="M150 300 Q145 255 170 235 Q165 265 185 270 Q180 240 205 215 Q205 255 228 262 Q222 240 245 232 Q262 265 252 300 Z" fill="#ff7a1a"/>
+              <path d="M168 300 Q165 270 182 258 Q182 280 198 282 Q196 258 214 245 Q216 275 236 280 Q240 290 235 300 Z" fill="#ffc94a"/>
+            </g>
+            <!-- בסיס -->
+            <rect x="20" y="296" width="360" height="26" rx="8" fill="#4a2312"/>
+            <!-- פיצה -->
+            <g class="pizza" transform="translate(200 330)">
+              <ellipse rx="120" ry="34" fill="#d99a4e"/>
+              <ellipse rx="106" ry="28" fill="#c8361e"/>
+              <ellipse rx="98" ry="24" fill="#f3d9a0" opacity=".85"/>
+              <circle cx="-50" cy="-4" r="9" fill="#c8361e"/><circle cx="10" cy="-10" r="9" fill="#c8361e"/>
+              <circle cx="55" cy="4" r="9" fill="#c8361e"/><circle cx="-15" cy="10" r="9" fill="#c8361e"/>
+              <ellipse cx="-30" cy="-12" rx="7" ry="3" fill="#3f7d2c"/><ellipse cx="35" cy="-8" rx="7" ry="3" fill="#3f7d2c"/>
+              <ellipse cx="25" cy="12" rx="7" ry="3" fill="#3f7d2c"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Highlights ===== -->
+    <section class="highlights">
+      <div class="container grid-4">
+        <div class="highlight"><span class="h-icon">🪵</span><h3>אש עצים אמיתית</h3><p>בלי גז, בלי קיצורי דרך. רק עצי פרי, אבן וחום של 450 מעלות.</p></div>
+        <div class="highlight"><span class="h-icon">🌾</span><h3>בצק מחמצת</h3><p>קמח איטלקי, מחמצת ביתית והתפחה של 48 שעות – קל, אוורירי וקריספי.</p></div>
+        <div class="highlight"><span class="h-icon">🍅</span><h3>חומרי גלם טריים</h3><p>עגבניות סן מרצנו, מוצרלה טרייה מדי בוקר וירקות מחקלאים מקומיים.</p></div>
+        <div class="highlight"><span class="h-icon">🍺</span><h3>בר פתוח עד מאוחר</h3><p>בירות מהחבית, יין, קוקטיילים של הבית והאפי האוור כל יום.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="about">
+      <div class="container split">
+        <div class="photo-frame" style="--img: url('images/about.jpg')">
+          <span class="photo-fallback">🔥<br>הטאבון שלנו</span>
+        </div>
+        <div>
+          <p class="eyebrow">הסיפור שלנו</p>
+          <h2>הכל התחיל מטאבון אחד ואהבה גדולה לבצק</h2>
+          <p>
+            פתחנו את פיצה בר טאבון כי רצינו מקום אחד שמשלב את מה שאנחנו הכי אוהבים:
+            פיצה אמיתית שנאפית מול העיניים, כוס בירה קרה וחברים סביב שולחן.
+          </p>
+          <p>
+            הטאבון שלנו נבנה בעבודת יד מאבן ולבנים שרופות, והוא בוער מהבוקר ועד סגירה.
+            כל פיצה נמתחת ביד, נכנסת לאש לתשעים שניות בלבד ויוצאת עם שוליים מנומרים,
+            מרכז רך וטעם עשן שאי אפשר לשחזר בתנור רגיל.
+          </p>
+          <ul class="checklist">
+            <li>הכל נאפה במקום, מול הלקוחות</li>
+            <li>אפשרויות טבעוניות וללא גלוטן</li>
+            <li>מתאים למשפחות, דייטים וחבר׳ה</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Menu ===== -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">התפריט</p>
+          <h2>מה יוצא היום מהטאבון</h2>
+          <p>כל הפיצות במגש אישי 30 ס״מ. מחירים בש״ח.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="קטגוריות תפריט">
+          <button class="tab active" role="tab" aria-selected="true" data-tab="pizza">פיצות</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="starters">פתיחים וסלטים</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="dessert">קינוחים</button>
+        </div>
+
+        <div class="tab-panel active" data-panel="pizza" role="tabpanel">
+          <div class="menu-grid">
+            <article class="dish"><div class="dish-top"><h3>מרגריטה</h3><span class="price">54</span></div><p>רוטב סן מרצנו, מוצרלה פיור די לטה, בזיליקום, שמן זית.</p><span class="tag">הקלאסיקה</span></article>
+            <article class="dish"><div class="dish-top"><h3>מרינרה</h3><span class="price">46</span></div><p>עגבניות, שום קונפי, אורגנו, שמן זית כתית. בלי גבינה, עם המון טעם.</p><span class="tag vegan">טבעוני</span></article>
+            <article class="dish"><div class="dish-top"><h3>דיאבולה</h3><span class="price">64</span></div><p>סלמי חריף, מוצרלה, צ׳ילי קלבריה ודבש חריף בסיום.</p><span class="tag hot">🌶 חריף</span></article>
+            <article class="dish"><div class="dish-top"><h3>ארבע גבינות</h3><span class="price">66</span></div><p>מוצרלה, גורגונזולה, פרמזן וריקוטה, אגוזי מלך ודבש.</p></article>
+            <article class="dish"><div class="dish-top"><h3>טאבון ספיישל</h3><span class="price">68</span></div><p>חציל קלוי על האש, פטה, צנוברים, עגבניות שרי וסחוג ירוק.</p><span class="tag star">★ מנת הבית</span></article>
+            <article class="dish"><div class="dish-top"><h3>פטריות וכמהין</h3><span class="price">72</span></div><p>שמנת, פטריות יער, טימין, שמן כמהין ופרמזן מגורד.</p></article>
+            <article class="dish"><div class="dish-top"><h3>פרושוטו ורוקט</h3><span class="price">74</span></div><p>מוצרלה, פרושוטו, רוקט טרי, פרמזן ובלסמי מצומצם.</p></article>
+            <article class="dish"><div class="dish-top"><h3>ירקות מהשוק</h3><span class="price">60</span></div><p>פלפלים קלויים, בצל סגול, זיתי קלמטה, ארטישוק ובזיליקום.</p><span class="tag vegan">אפשרות טבעונית</span></article>
+          </div>
+          <p class="menu-note">אפשר להחליף לבצק ללא גלוטן (+8 ₪) · תוספות על כל פיצה (+6 ₪)</p>
+        </div>
+
+        <div class="tab-panel" data-panel="starters" role="tabpanel" hidden>
+          <div class="menu-grid">
+            <article class="dish"><div class="dish-top"><h3>פוקאצ׳ה מהטאבון</h3><span class="price">28</span></div><p>רוזמרין, מלח גס ושמן זית, עם מטבל עגבניות ושום.</p></article>
+            <article class="dish"><div class="dish-top"><h3>בורטה</h3><span class="price">52</span></div><p>בורטה שלמה, עגבניות שרי צלויות, פסטו ופוקאצ׳ה חמה.</p></article>
+            <article class="dish"><div class="dish-top"><h3>כנפיים מהאש</h3><span class="price">48</span></div><p>כנפי עוף צלויות בטאבון, גלייז דבש-צ׳ילי ושומשום.</p><span class="tag hot">🌶 חריף</span></article>
+            <article class="dish"><div class="dish-top"><h3>סלט עגבניות</h3><span class="price">38</span></div><p>עגבניות עונה, בצל סגול, אורגנו טרי, שמן זית ומלח ים.</p><span class="tag vegan">טבעוני</span></article>
+            <article class="dish"><div class="dish-top"><h3>סלט רוקט ופרמזן</h3><span class="price">42</span></div><p>רוקט, אגסים, פרמזן, אגוזי מלך וויניגרט לימון.</p></article>
+            <article class="dish"><div class="dish-top"><h3>ארנצ׳יני</h3><span class="price">44</span></div><p>כדורי ריזוטו ממולאים מוצרלה, על רוטב עגבניות.</p></article>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="dessert" role="tabpanel" hidden>
+          <div class="menu-grid">
+            <article class="dish"><div class="dish-top"><h3>פיצה נוטלה</h3><span class="price">44</span></div><p>בצק מהטאבון, נוטלה, בננה, אגוזי לוז ואבקת סוכר.</p><span class="tag star">★ להיטים</span></article>
+            <article class="dish"><div class="dish-top"><h3>טירמיסו הבית</h3><span class="price">38</span></div><p>מסקרפונה, אספרסו, לייפינגרס וקקאו מריר.</p></article>
+            <article class="dish"><div class="dish-top"><h3>אפוגטו</h3><span class="price">26</span></div><p>כדור גלידת וניל ושוט אספרסו חם.</p></article>
+          </div>
+        </div>
+
+        <div class="center"><a href="#order" class="btn btn-primary">להזמנת משלוח / איסוף</a></div>
+      </div>
+    </section>
+
+    <!-- ===== Bar ===== -->
+    <section class="section bar" id="bar">
+      <div class="container split reverse">
+        <div>
+          <p class="eyebrow">הבר</p>
+          <h2>כי פיצה טובה צריכה משהו קר לצידה</h2>
+          <p>12 ברזים של בירות מקומיות ומיובאות, יינות איטלקיים בכוס, וקוקטיילים שהבר־מנים שלנו ממציאים כל עונה מחדש.</p>
+          <div class="bar-list">
+            <div><span>בירה מהחבית (שליש / חצי)</span><b>26 / 32</b></div>
+            <div><span>כוס יין הבית</span><b>36</b></div>
+            <div><span>אפרול שפריץ</span><b>44</b></div>
+            <div><span>נגרוני מעושן בטאבון</span><b>52</b></div>
+            <div><span>לימונדה נענע (ללא אלכוהול)</span><b>18</b></div>
+          </div>
+          <div class="happy-hour">
+            <strong>🍻 האפי האוור כל יום 17:00–19:00</strong>
+            <span>1+1 על בירות מהחבית ו־20% הנחה על פיצות</span>
+          </div>
+        </div>
+        <div class="photo-frame" style="--img: url('images/bar.jpg')">
+          <span class="photo-fallback">🍺<br>הבר שלנו</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Gallery ===== -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">גלריה</p>
+          <h2>טעימה ראשונה בעיניים</h2>
+        </div>
+        <div class="gallery">
+          <figure class="g-item tall" style="--img: url('images/gallery-1.jpg')"><span class="photo-fallback">🍕</span></figure>
+          <figure class="g-item" style="--img: url('images/gallery-2.jpg')"><span class="photo-fallback">🔥</span></figure>
+          <figure class="g-item" style="--img: url('images/gallery-3.jpg')"><span class="photo-fallback">🧀</span></figure>
+          <figure class="g-item wide" style="--img: url('images/gallery-4.jpg')"><span class="photo-fallback">🍻</span></figure>
+          <figure class="g-item" style="--img: url('images/gallery-5.jpg')"><span class="photo-fallback">🌿</span></figure>
+          <figure class="g-item" style="--img: url('images/gallery-6.jpg')"><span class="photo-fallback">🍷</span></figure>
+        </div>
+        <p class="center follow">עקבו אחרינו באינסטגרם <a href="https://instagram.com/" target="_blank" rel="noopener">@taboon.pizzabar</a></p>
+      </div>
+    </section>
+
+    <!-- ===== Events ===== -->
+    <section class="section events" id="events">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">אירועים וקבוצות</p>
+          <h2>חוגגים? אנחנו מדליקים את התנור</h2>
+          <p>ימי הולדת, אירועי חברה, מסיבות רווקים ורווקות – עד 80 איש, עם תפריט מותאם.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card"><span class="h-icon">🎂</span><h3>ימי הולדת</h3><p>שולחן שמור, פיצות על השולחן ובר פתוח לפי בחירה. עוגה עלינו.</p></div>
+          <div class="card"><span class="h-icon">💼</span><h3>אירועי חברה</h3><p>סגירת המקום או אזור פרטי, תפריט קבוצתי ומערכת הגברה למצגות.</p></div>
+          <div class="card"><span class="h-icon">👨‍🍳</span><h3>סדנת פיצה</h3><p>לומדים לעבוד עם בצק, ממתחים פיצה ואופים אותה בעצמכם בטאבון.</p></div>
+        </div>
+        <div class="center"><a href="#reserve" class="btn btn-ghost dark" data-occasion="אירוע">לתיאום אירוע</a></div>
+      </div>
+    </section>
+
+    <!-- ===== Reviews ===== -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">מה אומרים עלינו</p>
+          <h2>4.9 כוכבים מעל 600 ביקורות</h2>
+        </div>
+        <div class="grid-3">
+          <blockquote class="review"><div class="stars">★★★★★</div><p>״הפיצה הכי טובה שאכלתי מחוץ לנאפולי. השוליים מעושנים ופריכים, והאווירה פשוט כיפית.״</p><cite>— נועה ל.</cite></blockquote>
+          <blockquote class="review"><div class="stars">★★★★★</div><p>״חגגנו פה יום הולדת 30 לקבוצה של 25 איש. שירות מדהים, הכל יצא חם ובזמן. נחזור!״</p><cite>— איתי מ.</cite></blockquote>
+          <blockquote class="review"><div class="stars">★★★★★</div><p>״הנגרוני המעושן + פיצה דיאבולה = הקומבינציה המושלמת לערב חמישי.״</p><cite>— שירן ק.</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Order ===== -->
+    <section class="section order" id="order">
+      <div class="container order-inner">
+        <div>
+          <h2>רוצים טאבון בבית?</h2>
+          <p>משלוחים באזור עד 5 ק״מ, או איסוף עצמי מוכן תוך 15 דקות.</p>
+        </div>
+        <div class="order-btns">
+          <a class="btn btn-light" href="https://wolt.com/" target="_blank" rel="noopener">הזמנה בוולט</a>
+          <a class="btn btn-light" href="https://www.10bis.co.il/" target="_blank" rel="noopener">הזמנה בתן ביס</a>
+          <a class="btn btn-outline-light" href="tel:+972500000000">📞 הזמנה טלפונית</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reservation ===== -->
+    <section class="section reserve" id="reserve">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">הזמנת מקום</p>
+          <h2>שמרו שולחן ליד האש</h2>
+          <p>מלאו את הפרטים ואנחנו נאשר את ההזמנה בוואטסאפ תוך זמן קצר. לקבוצות מעל 12 איש – התקשרו אלינו.</p>
+          <ul class="contact-quick">
+            <li>📞 <a href="tel:+972500000000">050-000-0000</a></li>
+            <li>💬 <a href="https://wa.me/972500000000" target="_blank" rel="noopener">שלחו הודעה בוואטסאפ</a></li>
+          </ul>
+        </div>
+
+        <form class="reserve-form" id="reserve-form" novalidate>
+          <div class="field">
+            <label for="r-name">שם מלא</label>
+            <input id="r-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="r-phone">טלפון</label>
+            <input id="r-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="r-date">תאריך</label>
+              <input id="r-date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="r-time">שעה</label>
+              <select id="r-time" name="time" required></select>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="r-guests">מספר סועדים</label>
+              <select id="r-guests" name="guests" required></select>
+            </div>
+            <div class="field">
+              <label for="r-occasion">סיבת הביקור</label>
+              <select id="r-occasion" name="occasion">
+                <option value="">סתם כי בא לנו</option>
+                <option>יום הולדת</option>
+                <option>דייט</option>
+                <option>אירוע</option>
+                <option>ארוחה משפחתית</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="r-notes">הערות (אלרגיות, כיסא תינוק, ישיבה בחוץ...)</label>
+            <textarea id="r-notes" name="notes" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">שליחת בקשה בוואטסאפ</button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="container narrow">
+        <div class="section-head">
+          <p class="eyebrow">שאלות נפוצות</p>
+          <h2>לפני שאתם מגיעים</h2>
+        </div>
+        <details><summary>האם המקום כשר?</summary><p>המטבח אינו בהשגחת כשרות. איננו מגישים פירות ים ואיננו משלבים בשר וחלב באותה מנה.</p></details>
+        <details><summary>יש אפשרויות טבעוניות וללא גלוטן?</summary><p>כן! יש פיצות טבעוניות בתפריט, אפשר להחליף לגבינה טבעונית, וקיים בצק ללא גלוטן (שימו לב: הטאבון משותף ולכן לא מתאים לצליאקים).</p></details>
+        <details><summary>אפשר להגיע עם ילדים?</summary><p>בטח. יש כיסאות תינוק, פיצה בגודל ילדים ודפי צביעה. ילדים אוהבים לראות את הפיצה נכנסת לאש.</p></details>
+        <details><summary>יש חניה?</summary><p>יש חניון ציבורי במרחק דקתיים הליכה, וחניה כחול-לבן ברחובות הסמוכים.</p></details>
+        <details><summary>המקום נגיש?</summary><p>כן, הכניסה והשירותים נגישים לכיסאות גלגלים.</p></details>
+        <details><summary>אפשר להזמין מקום באותו יום?</summary><p>בהחלט, בכפוף לזמינות. בימי חמישי ושישי מומלץ להזמין מראש.</p></details>
+      </div>
+    </section>
+
+    <!-- ===== Contact / Hours / Map ===== -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="info-card">
+          <h2>שעות פתיחה</h2>
+          <ul class="hours" id="hours">
+            <li data-day="0"><span>ראשון – חמישי</span><span>12:00 – 00:00</span></li>
+            <li data-day="5"><span>שישי</span><span>12:00 – 16:00</span></li>
+            <li data-day="6"><span>מוצאי שבת</span><span>19:00 – 01:00</span></li>
+          </ul>
+          <p class="open-now" id="open-now"></p>
+        </div>
+        <div class="info-card">
+          <h2>איך מגיעים</h2>
+          <p class="address">רחוב הדוגמה 12, תל אביב</p>
+          <div class="nav-btns">
+            <a class="btn btn-ghost dark btn-sm" href="https://waze.com/ul?q=%D7%A8%D7%97%D7%95%D7%91%20%D7%94%D7%93%D7%95%D7%92%D7%9E%D7%94%2012%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91" target="_blank" rel="noopener">ניווט ב־Waze</a>
+            <a class="btn btn-ghost dark btn-sm" href="https://maps.google.com/?q=%D7%A8%D7%97%D7%95%D7%91%20%D7%94%D7%93%D7%95%D7%92%D7%9E%D7%94%2012%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91" target="_blank" rel="noopener">Google Maps</a>
+          </div>
+          <ul class="contact-quick">
+            <li>📞 <a href="tel:+972500000000">050-000-0000</a></li>
+            <li>✉️ <a href="mailto:hello@taboon-pizzabar.co.il">hello@taboon-pizzabar.co.il</a></li>
+          </ul>
+        </div>
+        <div class="map-wrap">
+          <iframe title="מפה – פיצה בר טאבון" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#top" class="logo"><span class="logo-mark">🔥</span><span class="logo-text">טאבון<small>פיצה בר</small></span></a>
+        <p>פיצה אפויה באש עצים, מאז 2019.</p>
+      </div>
+      <div class="socials">
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="אינסטגרם">Instagram</a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="פייסבוק">Facebook</a>
+        <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="טיקטוק">TikTok</a>
+      </div>
+      <div class="newsletter">
+        <p>הצטרפו למועדון ותקבלו פיצה מתנה ביום ההולדת 🎁</p>
+        <form id="club-form" class="club-form">
+          <label for="club-phone" class="sr-only">מספר טלפון</label>
+          <input id="club-phone" type="tel" placeholder="מספר טלפון" required>
+          <button class="btn btn-primary btn-sm" type="submit">הצטרפות</button>
+        </form>
+        <p class="form-msg club-msg" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <span>© <span id="year"></span> פיצה בר טאבון. כל הזכויות שמורות.</span>
+      <span><a href="#">הצהרת נגישות</a> · <a href="#">מדיניות פרטיות</a></span>
+    </div>
+  </footer>
+
+  <!-- כפתורים צפים -->
+  <a class="fab-whatsapp" href="https://wa.me/972500000000" target="_blank" rel="noopener" aria-label="שליחת הודעה בוואטסאפ">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.2-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.6-5.6C5.2 9.9 10 5.3 16 5.3s10.8 4.6 10.8 10.5S22 26.4 16 26.4zm5.9-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.5 4.9 2.7 1.1 3.3.9 3.9.8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+  <a href="#reserve" class="mobile-cta">הזמנת מקום</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
