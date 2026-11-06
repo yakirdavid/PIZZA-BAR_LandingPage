@@ -13,6 +13,17 @@ if (location.hash) history.replaceState(null, "", location.pathname + location.s
 toTop();
 window.addEventListener("load", toTop);
 
+// קישורים פנימיים גוללים בלי להוסיף #... לכתובת, כדי שקישור משותף לא יפתח באמצע הדף
+document.addEventListener("click", (e) => {
+  const link = e.target.closest('a[href^="#"]');
+  if (!link) return;
+  const target = link.getAttribute("href") === "#top" ? document.body : document.querySelector(link.getAttribute("href"));
+  if (!target) return;
+  e.preventDefault();
+  target.scrollIntoView({ behavior: "smooth" });
+  if (target.id === "main") target.focus({ preventScroll: true });
+});
+
 // ===== Header: scroll state + mobile menu =====
 const header = $(".site-header");
 const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 40);
