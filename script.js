@@ -6,6 +6,13 @@ const CONFIG = {
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 
+// ===== תמיד לפתוח בראש הדף (בלי לשחזר גלילה או לקפוץ לעוגן מהכתובת) =====
+if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+const toTop = () => window.scrollTo({ top: 0, behavior: "instant" });
+if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+toTop();
+window.addEventListener("load", toTop);
+
 // ===== Header: scroll state + mobile menu =====
 const header = $(".site-header");
 const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 40);

@@ -299,12 +299,14 @@ details p { padding: 0 1.4rem 1.2rem; margin: 0; color: var(--muted); }
   .main-nav {
     position: fixed; inset: 0;
     flex-direction: column; justify-content: center; gap: 1.6rem;
-    background: rgba(26, 15, 10, .98);
+    background: var(--coal);
     font-size: 1.3rem;
     opacity: 0; visibility: hidden;
     transition: opacity .3s, visibility .3s;
   }
   .nav-open .main-nav { opacity: 1; visibility: visible; }
+  /* blur יוצר הקשר מיקום חדש ומכווץ את התפריט לגובה הכותרת */
+  .nav-open .site-header { backdrop-filter: none; }
   .nav-open .nav-toggle span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
   .nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
   .nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
