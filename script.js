@@ -118,7 +118,7 @@ form.addEventListener("submit", (e) => {
 });
 
 // ===== Reveal on scroll =====
-const revealEls = $$(".section-head, .highlight, .step, .package, .dish, .card, .review, .split > *, details");
+const revealEls = $$(".section-head, .pillar, .pull-quote, .packages-head, .step, .package, .dish, .card, .review, .split > *, details");
 revealEls.forEach((el) => el.classList.add("reveal"));
 const io = new IntersectionObserver(
   (entries) =>
