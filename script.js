@@ -87,8 +87,10 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const msg = $(".form-msg", form);
   let valid = true;
-  $$("[required]", form).forEach((el) => {
-    const bad = !el.value.trim() || (el.type === "tel" && !/^[\d\s+\-()]{9,}$/.test(el.value));
+  $$("[required], input[type=number]", form).forEach((el) => {
+    const bad = (el.required && !el.value.trim())
+      || (el.type === "tel" && !/^[\d\s+\-()]{9,}$/.test(el.value))
+      || (el.type === "number" && el.value.trim() !== "" && !(Number.isInteger(+el.value) && +el.value >= +el.min));
     el.closest(".field").classList.toggle("invalid", bad);
     if (bad) valid = false;
   });
@@ -107,7 +109,10 @@ form.addEventListener("submit", (e) => {
     `סוג האירוע: ${data.type}`,
     `תאריך: ${d}/${m}/${y}`,
     `מיקום: ${data.city}`,
-    `מספר אורחים: ${data.guests}`,
+    `מבוגרים (מגיל 7): ${+data.adults}`,
+    `ילדים (גילאי 3 עד 7): ${+data.kids || 0}`,
+    `תינוקות (עד גיל 3): ${+data.babies || 0}`,
+    `סה״כ אורחים: ${+data.adults + (+data.kids || 0) + (+data.babies || 0)}`,
     data.package && `מסלול: ${data.package}`,
     data.notes && `הערות: ${data.notes}`,
   ].filter(Boolean);

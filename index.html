@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
 
   <script type="application/ld+json">
   {
@@ -326,16 +326,27 @@
               <input id="q-date" name="date" type="date" required>
             </div>
           </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="q-city">מיקום (יישוב)</label>
-              <input id="q-city" name="city" type="text" required>
-            </div>
-            <div class="field">
-              <label for="q-guests">כמה אורחים בערך?</label>
-              <input id="q-guests" name="guests" type="number" min="1" inputmode="numeric" required>
-            </div>
+          <div class="field">
+            <label for="q-city">מיקום (יישוב)</label>
+            <input id="q-city" name="city" type="text" required>
           </div>
+          <fieldset class="guests">
+            <legend>כמה אורחים בערך?</legend>
+            <div class="field-row three">
+              <div class="field">
+                <label for="q-adults">מבוגרים <small>(מגיל 7)</small></label>
+                <input id="q-adults" name="adults" type="number" min="1" step="1" inputmode="numeric" required>
+              </div>
+              <div class="field">
+                <label for="q-kids">ילדים <small>(גילאי 3 עד 7)</small></label>
+                <input id="q-kids" name="kids" type="number" min="0" step="1" inputmode="numeric" value="0">
+              </div>
+              <div class="field">
+                <label for="q-babies">תינוקות <small>(עד גיל 3)</small></label>
+                <input id="q-babies" name="babies" type="number" min="0" step="1" inputmode="numeric" value="0">
+              </div>
+            </div>
+          </fieldset>
           <div class="field">
             <label for="q-package">מסלול</label>
             <select id="q-package" name="package">
@@ -418,6 +429,6 @@
   </a>
   <a href="#sec-quote" class="mobile-cta">לבדיקת זמינות לאירוע</a>
 
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>
