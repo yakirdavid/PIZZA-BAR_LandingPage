@@ -105,7 +105,8 @@
       let name = "";
       if (/wa\.me|whatsapp/.test(href)) name = "whatsapp";
       else if (href.startsWith("tel:")) name = "phone";
-      else if (href.includes("instagram.com")) name = "instagram";
+      // אינסטגרם: לפי הכפתור (instagram:about / instagram:quote / instagram:footer)
+      else if (href.includes("instagram.com")) name = `instagram:${el.closest("[data-track]")?.dataset.track || "other"}`;
       else if (el.matches(".tab")) name = `tab:${el.dataset.tab}`;
       else if (el.dataset.package) name = `package:${el.dataset.package}`;
       else if (el.closest(".main-nav") && href.startsWith("#sec-")) name = `nav:${href.slice(5)}`;
