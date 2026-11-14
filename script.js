@@ -118,6 +118,12 @@ form.addEventListener("submit", (e) => {
   ].filter(Boolean);
 
   window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank", "noopener");
+  // מדד אנונימי: נשלח טופס (בלי שם וטלפון)
+  window.pbTrack?.("lead", "quote_form", null, {
+    type: data.type,
+    package: data.package || "",
+    guests: +data.adults + (+data.kids || 0) + (+data.babies || 0),
+  });
   msg.className = "form-msg ok";
   msg.textContent = "מעולה! פתחנו לכם את וואטסאפ. רק לשלוח ונחזור אליכם 🔥";
 });
